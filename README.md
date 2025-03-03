@@ -8,4 +8,4 @@ This project implements **LSB (Least Significant Bit) image steganography** to s
 
 ## Installation  
 ```sh
-pip install opencv-python numpy pillow
+python 3 pip install cv2
