@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 from PIL import Image
 
-def encode_text(image_path, text, output_path):
-    image = cv2.imread(image_path)
+def encode_text("C:\Users\A\Downloads\pic.jpg", text, output_path):
+    image = cv2.imread("C:\Users\A\Downloads\pic.jpg")
     binary_text = ''.join(format(ord(i), '08b') for i in text) + '1111111111111110'  
     data_index = 0
     
@@ -17,8 +17,8 @@ def encode_text(image_path, text, output_path):
     cv2.imwrite(output_path, image)
     print("Text successfully hidden in", output_path)
 
-def decode_text(image_path):
-    image = cv2.imread(image_path)
+def decode_text("C:\Users\A\Downloads\pic.jpg"):
+    image = cv2.imread("C:\Users\A\Downloads\pic.jpg")
     binary_text = ""
     
     for row in image:
